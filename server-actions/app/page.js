@@ -1,19 +1,14 @@
-import Image from "next/image";
-import fs from "fs/promises";
+"use client"
+import {SubmitActions} from "@/actions/form"
+import { useRef } from "react";
 
 export default function Home() {
 
-  const SubmitActions=async (e)=>{
-    "use server"
-    const {name, add}=Object.fromEntries(e.entries())
-    console.log(name)
-    console.log(add)
-    await fs.writeFile("ganesh.txt", `Name: ${name}\nAddress: ${add}`)
-  }
+  const ref=useRef()
   return (
     <div className="w-full max-w-md mx-auto my-12 p-8 bg-slate-900 border border-slate-800 rounded-2xl shadow-xl">
       <h2 className="text-xl font-bold text-white mb-6">Server Actions Form</h2>
-      <form action={SubmitActions}>
+      <form ref={ref} action={(e)=>{SubmitActions(e); ref.current.reset()}}>
         <div className="mb-5">
           <label htmlFor="name" className="block text-sm font-medium text-slate-300 mb-2">Name</label>
           <input 

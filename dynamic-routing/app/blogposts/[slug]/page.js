@@ -1,4 +1,5 @@
 export default async function Page({ params }) {
+    throw new Error('error hai')
     const { slug } = await params;
 
     let languages = ['java','python','Mysql','cpp','ruby']

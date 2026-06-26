@@ -3,3 +3,4 @@ manam prathisari{ "(admin)"} aa group folder/name of the folder kottakunda . dir
 vachheti route ni an then it will automatically manam direct ga lopala unna a folder name type chesthe saripothadi.
 
 
+generatemetadata({params}):-Hey if you want to add metadata for assume that in that login page we need to add metadata. In the manual we will need to copy paste the layout.jp or js page and update the data. In short, we can use the generatemetadata  function to update the metadata directly in the page.js .

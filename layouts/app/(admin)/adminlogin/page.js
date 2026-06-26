@@ -9,3 +9,10 @@ const Login = () => {
 }
 
 export default Login
+
+export function generateMetadata() {
+  return {
+    title: "Login page",
+    description: "Login page",
+  };
+}

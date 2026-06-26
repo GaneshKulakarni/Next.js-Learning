@@ -1,0 +1,5 @@
+Group Layouts:- ante okavel manamu smilar kind of pages ni annitini oka foder lo petti avitini prathi sari access chesitappudu 
+manam prathisari{ "(admin)"} aa group folder/name of the folder kottakunda . direst mana Group folder name in paranthasis lo petti 
+vachheti route ni an then it will automatically manam direct ga lopala unna a folder name type chesthe saripothadi.
+
+
